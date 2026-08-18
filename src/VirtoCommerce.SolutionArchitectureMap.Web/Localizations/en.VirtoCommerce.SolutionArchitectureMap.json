@@ -1,0 +1,24 @@
+{
+  "solution-architecture-map": {
+    "blades": {
+      "hello-world": {
+        "title": "Hello world blade"
+      }
+    }
+  },
+  "permissions": {
+    "solution-architecture-map:access": "Open Solution Architecture Map menu",
+    "solution-architecture-map:create": "Create Solution Architecture Map related data",
+    "solution-architecture-map:read": "View Solution Architecture Map related data",
+    "solution-architecture-map:update": "Update Solution Architecture Map related data",
+    "solution-architecture-map:delete": "Delete Solution Architecture Map related data"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Solution Architecture Map Enabled",
+        "description": "Solution Architecture Map Enabled setting"
+      }
+    }
+  }
+}

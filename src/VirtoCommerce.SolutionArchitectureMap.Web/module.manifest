@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>VirtoCommerce.SolutionArchitectureMap</id>
+  <version>3.1000.0</version>
+  <version-tag></version-tag>
+
+  <platformVersion>3.1039.0</platformVersion>
+  <dependencies>
+    <!--<dependency id="VirtoCommerce.Core" version="3.1001.2" />-->
+  </dependencies>
+
+  <title>Virto Commerce Solution Architecture Map</title>
+  <description>Virto Commerce Solution Architecture Map</description>
+
+  <authors>
+    <author>Oleg Zhuk</author>
+  </authors>
+  <owners>
+    <owner>Virto Commerce</owner>
+  </owners>
+
+  <projectUrl>https://github.com/Virto Commerce/vc-module-solution-architecture-map</projectUrl>
+  <iconUrl>Modules/$(VirtoCommerce.SolutionArchitectureMap)/Content/logo.png</iconUrl>
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+  <assemblyFile>VirtoCommerce.SolutionArchitectureMap.Web.dll</assemblyFile>
+  <moduleType>VirtoCommerce.SolutionArchitectureMap.Web.Module, VirtoCommerce.SolutionArchitectureMap.Web</moduleType>
+
+  <releaseNotes>First version.</releaseNotes>
+  <copyright>Copyright © 2026 Virto Commerce. All rights reserved</copyright>
+  <tags>extension module</tags>
+  <useFullTypeNameInSwagger>false</useFullTypeNameInSwagger>
+</module>
