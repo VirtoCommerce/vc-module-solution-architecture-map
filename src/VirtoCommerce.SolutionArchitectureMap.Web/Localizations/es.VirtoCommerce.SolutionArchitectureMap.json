@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Abrir el menú Solution Architecture Map",
+    "solution-architecture-map:create": "Crear datos de Solution Architecture Map",
+    "solution-architecture-map:read": "Ver datos de Solution Architecture Map",
+    "solution-architecture-map:update": "Actualizar datos de Solution Architecture Map",
+    "solution-architecture-map:delete": "Eliminar datos de Solution Architecture Map"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Habilitar Solution Architecture Map",
+        "description": "Indicador de función reservado para el módulo Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Personalizaciones (overrides)",
+        "description": "Overrides por elemento para el mapa de calor de personalización (JSON indexado por id de elemento)."
+      },
+      "ProjectInfo": {
+        "title": "Información del proyecto",
+        "description": "Nombre/logotipo del cliente y datos del socio de implementación mostrados en el mapa."
+      },
+      "Topology": {
+        "title": "Topología de la solución",
+        "description": "La topología de la solución que se entrega al mapa: inquilinos, regiones, conexiones, centros de datos y límites de métricas (JSON)."
+      }
+    }
+  }
+}

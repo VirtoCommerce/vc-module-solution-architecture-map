@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Åpne Solution Architecture Map-menyen",
+    "solution-architecture-map:create": "Opprette Solution Architecture Map-data",
+    "solution-architecture-map:read": "Vise Solution Architecture Map-data",
+    "solution-architecture-map:update": "Oppdatere Solution Architecture Map-data",
+    "solution-architecture-map:delete": "Slette Solution Architecture Map-data"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Aktiver Solution Architecture Map",
+        "description": "Reservert funksjonsflagg for Solution Architecture Map-modulen."
+      },
+      "CustomizationOverrides": {
+        "title": "Tilpasningsoverstyringer",
+        "description": "Overstyringer per element for tilpasnings-varmekartet (JSON med elementets id som nøkkel)."
+      },
+      "ProjectInfo": {
+        "title": "Prosjektinformasjon",
+        "description": "Kundenavn/-logo og detaljer om implementeringspartner som vises på kartet."
+      },
+      "Topology": {
+        "title": "Løsningstopologi",
+        "description": "Løsningstopologien som leveres til kartet: leietakere, regioner, tilkoblinger, datasentre og metrikkgrenser (JSON)."
+      }
+    }
+  }
+}

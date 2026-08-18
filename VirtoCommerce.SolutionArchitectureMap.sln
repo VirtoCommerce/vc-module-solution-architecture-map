@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11605.240 stable
+VisualStudioVersion = 18.4.11605.240
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}"
 EndProject
@@ -9,12 +9,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtoCommerce.SolutionArchitectureMap.Data", "src\VirtoCommerce.SolutionArchitectureMap.Data\VirtoCommerce.SolutionArchitectureMap.Data.csproj", "{119EEB2A-99D7-4F66-9619-5EE111519470}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtoCommerce.SolutionArchitectureMap.Core", "src\VirtoCommerce.SolutionArchitectureMap.Core\VirtoCommerce.SolutionArchitectureMap.Core.csproj", "{C55CEA1A-7C72-4471-A2A4-DD6B475CB47D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtoCommerce.SolutionArchitectureMap.Data.MySql", "src\VirtoCommerce.SolutionArchitectureMap.Data.MySql\VirtoCommerce.SolutionArchitectureMap.Data.MySql.csproj", "{1DB99BC6-7499-48C7-BE93-B8BF33550FFC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql", "src\VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql\VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql.csproj", "{24C57772-20D5-4E33-9EF0-D6B86EC5B953}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtoCommerce.SolutionArchitectureMap.Data.SqlServer", "src\VirtoCommerce.SolutionArchitectureMap.Data.SqlServer\VirtoCommerce.SolutionArchitectureMap.Data.SqlServer.csproj", "{573905F5-491C-4776-A4F1-7471B7205000}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F32975A6-64BE-4C88-8669-4E62E1870EC4}"
 EndProject
@@ -49,18 +43,6 @@ Global
 		{C55CEA1A-7C72-4471-A2A4-DD6B475CB47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C55CEA1A-7C72-4471-A2A4-DD6B475CB47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C55CEA1A-7C72-4471-A2A4-DD6B475CB47D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DB99BC6-7499-48C7-BE93-B8BF33550FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DB99BC6-7499-48C7-BE93-B8BF33550FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DB99BC6-7499-48C7-BE93-B8BF33550FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DB99BC6-7499-48C7-BE93-B8BF33550FFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24C57772-20D5-4E33-9EF0-D6B86EC5B953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24C57772-20D5-4E33-9EF0-D6B86EC5B953}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24C57772-20D5-4E33-9EF0-D6B86EC5B953}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24C57772-20D5-4E33-9EF0-D6B86EC5B953}.Release|Any CPU.Build.0 = Release|Any CPU
-		{573905F5-491C-4776-A4F1-7471B7205000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{573905F5-491C-4776-A4F1-7471B7205000}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{573905F5-491C-4776-A4F1-7471B7205000}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{573905F5-491C-4776-A4F1-7471B7205000}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D00D5293-32F0-4B90-A878-71C8E2EB8AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D00D5293-32F0-4B90-A878-71C8E2EB8AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00D5293-32F0-4B90-A878-71C8E2EB8AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,9 +55,6 @@ Global
 		{8C47B78E-07AF-4588-8051-820127F2025C} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
 		{119EEB2A-99D7-4F66-9619-5EE111519470} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
 		{C55CEA1A-7C72-4471-A2A4-DD6B475CB47D} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
-		{1DB99BC6-7499-48C7-BE93-B8BF33550FFC} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
-		{24C57772-20D5-4E33-9EF0-D6B86EC5B953} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
-		{573905F5-491C-4776-A4F1-7471B7205000} = {636D6E2B-E65E-4760-B59B-3C3FECF6B3E8}
 		{D00D5293-32F0-4B90-A878-71C8E2EB8AF7} = {F32975A6-64BE-4C88-8669-4E62E1870EC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

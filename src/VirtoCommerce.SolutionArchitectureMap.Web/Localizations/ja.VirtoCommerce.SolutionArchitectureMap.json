@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Solution Architecture Map メニューを開く",
+    "solution-architecture-map:create": "Solution Architecture Map 関連データを作成する",
+    "solution-architecture-map:read": "Solution Architecture Map 関連データを表示する",
+    "solution-architecture-map:update": "Solution Architecture Map 関連データを更新する",
+    "solution-architecture-map:delete": "Solution Architecture Map 関連データを削除する"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Solution Architecture Map を有効化する",
+        "description": "Solution Architecture Map モジュール用の予約済み機能フラグ。"
+      },
+      "CustomizationOverrides": {
+        "title": "カスタマイズのオーバーライド",
+        "description": "カスタマイズ ヒートマップの項目ごとのオーバーライド（項目 ID をキーとする JSON）。"
+      },
+      "ProjectInfo": {
+        "title": "プロジェクト情報",
+        "description": "マップに表示される顧客名/ロゴおよび実装パートナーの情報。"
+      },
+      "Topology": {
+        "title": "ソリューション トポロジ",
+        "description": "マップに提供されるソリューション トポロジ：テナント、リージョン、接続、データセンター、メトリックの上限（JSON）。"
+      }
+    }
+  }
+}

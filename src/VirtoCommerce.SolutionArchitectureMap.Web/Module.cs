@@ -1,18 +1,10 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VirtoCommerce.Platform.Core.Modularity;
 using VirtoCommerce.Platform.Core.Security;
 using VirtoCommerce.Platform.Core.Settings;
-using VirtoCommerce.Platform.Data.MySql.Extensions;
-using VirtoCommerce.Platform.Data.PostgreSql.Extensions;
-using VirtoCommerce.Platform.Data.SqlServer.Extensions;
 using VirtoCommerce.SolutionArchitectureMap.Core;
-using VirtoCommerce.SolutionArchitectureMap.Data.MySql;
-using VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql;
-using VirtoCommerce.SolutionArchitectureMap.Data.Repositories;
-using VirtoCommerce.SolutionArchitectureMap.Data.SqlServer;
 
 namespace VirtoCommerce.SolutionArchitectureMap.Web;
 
@@ -23,31 +15,21 @@ public class Module : IModule, IHasConfiguration
 
     public void Initialize(IServiceCollection serviceCollection)
     {
-        serviceCollection.AddDbContext<SolutionArchitectureMapDbContext>(options =>
-        {
-            var databaseProvider = Configuration.GetValue("DatabaseProvider", "SqlServer");
-            var connectionString = Configuration.GetConnectionString(ModuleInfo.Id) ?? Configuration.GetConnectionString("VirtoCommerce");
-
-            switch (databaseProvider)
-            {
-                case "MySql":
-                    options.UseMySqlDatabase(connectionString, typeof(MySqlDataAssemblyMarker), Configuration);
-                    break;
-                case "PostgreSql":
-                    options.UsePostgreSqlDatabase(connectionString, typeof(PostgreSqlDataAssemblyMarker), Configuration);
-                    break;
-                default:
-                    options.UseSqlServerDatabase(connectionString, typeof(SqlServerDataAssemblyMarker), Configuration);
-                    break;
-            }
-        });
-
         // Override models
         //AbstractTypeFactory<OriginalModel>.OverrideType<OriginalModel, ExtendedModel>().MapToType<ExtendedEntity>();
         //AbstractTypeFactory<OriginalEntity>.OverrideType<OriginalEntity, ExtendedEntity>();
 
         // Register services
-        //serviceCollection.AddTransient<IMyService, MyService>();
+        serviceCollection.AddSingleton<Core.Services.ITopologyReader, Data.Services.SettingsTopologyReader>();
+        serviceCollection.AddSingleton<Core.Services.ICatalogSizeReader, Data.Services.SearchCatalogSizeReader>();
+        serviceCollection.AddSingleton<Core.Services.ISolutionTopologyProvider, Data.Services.StaticTopologyProvider>();
+        serviceCollection.AddSingleton<Core.Services.IMetricsProvider, Data.Services.SampleMetricsProvider>();
+        serviceCollection.AddSingleton<Core.Services.IServiceStatusProvider, Data.Services.SampleStatusProvider>();
+        serviceCollection.AddSingleton<Core.Services.IInstalledModulesReader, Data.Services.LocalInstalledModulesReader>();
+        serviceCollection.AddSingleton<Core.Services.IOverridesReader, Data.Services.SettingsOverridesReader>();
+        serviceCollection.AddSingleton<Core.Services.IProjectInfoReader, Data.Services.SettingsProjectInfoReader>();
+        serviceCollection.AddSingleton<Core.Services.ICustomizationProvider, Data.Services.ManifestCustomizationProvider>();
+        serviceCollection.AddSingleton<Core.Services.IIncidentsProvider, Data.Services.SampleIncidentsProvider>();
     }
 
     public void PostInitialize(IApplicationBuilder appBuilder)
@@ -61,11 +43,6 @@ public class Module : IModule, IHasConfiguration
         // Register permissions
         var permissionsRegistrar = serviceProvider.GetRequiredService<IPermissionsRegistrar>();
         permissionsRegistrar.RegisterPermissions(ModuleInfo.Id, "Solution Architecture Map", ModuleConstants.Security.Permissions.AllPermissions);
-
-        // Apply migrations
-        using var serviceScope = serviceProvider.CreateScope();
-        using var dbContext = serviceScope.ServiceProvider.GetRequiredService<SolutionArchitectureMapDbContext>();
-        dbContext.Database.Migrate();
     }
 
     public void Uninstall()

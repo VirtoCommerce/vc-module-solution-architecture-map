@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Menü „Solution Architecture Map“ öffnen",
+    "solution-architecture-map:create": "Daten der Solution Architecture Map erstellen",
+    "solution-architecture-map:read": "Daten der Solution Architecture Map anzeigen",
+    "solution-architecture-map:update": "Daten der Solution Architecture Map aktualisieren",
+    "solution-architecture-map:delete": "Daten der Solution Architecture Map löschen"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Solution Architecture Map aktivieren",
+        "description": "Reserviertes Feature-Flag für das Modul Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Anpassungs-Overrides",
+        "description": "Overrides pro Element für die Anpassungs-Heatmap (JSON, nach Element-ID)."
+      },
+      "ProjectInfo": {
+        "title": "Projektinformationen",
+        "description": "Kundenname/-logo und Angaben zum Implementierungspartner, die auf der Karte angezeigt werden."
+      },
+      "Topology": {
+        "title": "Lösungstopologie",
+        "description": "Die an die Karte gelieferte Lösungstopologie: Mandanten, Regionen, Verbindungen, Rechenzentren und Metrik-Obergrenzen (JSON)."
+      }
+    }
+  }
+}

@@ -21,8 +21,5 @@
   <ItemGroup>
     <ProjectReference Include="..\VirtoCommerce.SolutionArchitectureMap.Core\VirtoCommerce.SolutionArchitectureMap.Core.csproj" />
     <ProjectReference Include="..\VirtoCommerce.SolutionArchitectureMap.Data\VirtoCommerce.SolutionArchitectureMap.Data.csproj" />
-    <ProjectReference Include="..\VirtoCommerce.SolutionArchitectureMap.Data.MySql\VirtoCommerce.SolutionArchitectureMap.Data.MySql.csproj" />
-    <ProjectReference Include="..\VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql\VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql.csproj" />
-    <ProjectReference Include="..\VirtoCommerce.SolutionArchitectureMap.Data.SqlServer\VirtoCommerce.SolutionArchitectureMap.Data.SqlServer.csproj" />
   </ItemGroup>
 </Project>

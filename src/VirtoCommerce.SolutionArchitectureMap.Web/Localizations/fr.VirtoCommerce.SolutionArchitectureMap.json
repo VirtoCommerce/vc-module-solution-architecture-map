@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Ouvrir le menu Solution Architecture Map",
+    "solution-architecture-map:create": "Créer des données Solution Architecture Map",
+    "solution-architecture-map:read": "Afficher les données Solution Architecture Map",
+    "solution-architecture-map:update": "Mettre à jour les données Solution Architecture Map",
+    "solution-architecture-map:delete": "Supprimer les données Solution Architecture Map"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Activer Solution Architecture Map",
+        "description": "Indicateur de fonctionnalité réservé pour le module Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Surcharges de personnalisation",
+        "description": "Surcharges par élément pour la carte thermique de personnalisation (JSON indexé par id d’élément)."
+      },
+      "ProjectInfo": {
+        "title": "Informations du projet",
+        "description": "Nom/logo du client et coordonnées du partenaire d’implémentation affichés sur la carte."
+      },
+      "Topology": {
+        "title": "Topologie de la solution",
+        "description": "La topologie de la solution fournie à la carte : locataires, régions, connexions, centres de données et plafonds de métriques (JSON)."
+      }
+    }
+  }
+}

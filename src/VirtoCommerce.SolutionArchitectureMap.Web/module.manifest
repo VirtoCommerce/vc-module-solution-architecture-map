@@ -6,11 +6,11 @@
 
   <platformVersion>3.1039.0</platformVersion>
   <dependencies>
-    <!--<dependency id="VirtoCommerce.Core" version="3.1001.2" />-->
+    <dependency id="VirtoCommerce.Search" version="3.1004.1" />
   </dependencies>
 
-  <title>Virto Commerce Solution Architecture Map</title>
-  <description>Virto Commerce Solution Architecture Map</description>
+  <title>Solution Architecture Map</title>
+  <description>Interactive solution architecture map to the platform App Menu. It visualizes how a customer's solution is deployed across Virto Cloud and Virto Commerce as an explorable, animated "iceberg".</description>
 
   <authors>
     <author>Oleg Zhuk</author>
@@ -19,8 +19,8 @@
     <owner>Virto Commerce</owner>
   </owners>
 
-  <projectUrl>https://github.com/Virto Commerce/vc-module-solution-architecture-map</projectUrl>
-  <iconUrl>Modules/$(VirtoCommerce.SolutionArchitectureMap)/Content/logo.png</iconUrl>
+  <projectUrl>https://github.com/VirtoCommerce/vc-module-solution-architecture-map</projectUrl>
+  <iconUrl>Modules/$(VirtoCommerce.SolutionArchitectureMap)/Content/logo.svg</iconUrl>
   <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
   <assemblyFile>VirtoCommerce.SolutionArchitectureMap.Web.dll</assemblyFile>
@@ -30,4 +30,15 @@
   <copyright>Copyright © 2026 Virto Commerce. All rights reserved</copyright>
   <tags>extension module</tags>
   <useFullTypeNameInSwagger>false</useFullTypeNameInSwagger>
+
+  <!-- Standalone Vue app surfaced in the platform App Menu (permission-gated). -->
+  <apps>
+    <app id="solution-architecture-map">
+      <title>Solution Architecture Map</title>
+      <description>Interactive map of your solution across Virto Cloud and Virto Commerce.</description>
+      <iconUrl>/modules/$(VirtoCommerce.SolutionArchitectureMap)/Content/logo.svg</iconUrl>
+      <permission>solution-architecture-map:access</permission>
+      <supportEmbeddedMode>true</supportEmbeddedMode>
+    </app>
+  </apps>
 </module>

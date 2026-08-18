@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Otwórz menu Solution Architecture Map",
+    "solution-architecture-map:create": "Tworzenie danych Solution Architecture Map",
+    "solution-architecture-map:read": "Wyświetlanie danych Solution Architecture Map",
+    "solution-architecture-map:update": "Aktualizacja danych Solution Architecture Map",
+    "solution-architecture-map:delete": "Usuwanie danych Solution Architecture Map"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Włącz Solution Architecture Map",
+        "description": "Zarezerwowana flaga funkcji dla modułu Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Nadpisania dostosowań",
+        "description": "Nadpisania dla poszczególnych elementów mapy cieplnej dostosowań (JSON według id elementu)."
+      },
+      "ProjectInfo": {
+        "title": "Informacje o projekcie",
+        "description": "Nazwa/logo klienta oraz dane partnera wdrożeniowego wyświetlane na mapie."
+      },
+      "Topology": {
+        "title": "Topologia rozwiązania",
+        "description": "Topologia rozwiązania dostarczana do mapy: dzierżawcy, regiony, połączenia, centra danych i limity metryk (JSON)."
+      }
+    }
+  }
+}

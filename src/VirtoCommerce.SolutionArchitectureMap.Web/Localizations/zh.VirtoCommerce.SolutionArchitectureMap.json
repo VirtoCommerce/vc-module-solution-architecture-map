@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "打开 Solution Architecture Map 菜单",
+    "solution-architecture-map:create": "创建 Solution Architecture Map 相关数据",
+    "solution-architecture-map:read": "查看 Solution Architecture Map 相关数据",
+    "solution-architecture-map:update": "更新 Solution Architecture Map 相关数据",
+    "solution-architecture-map:delete": "删除 Solution Architecture Map 相关数据"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "启用 Solution Architecture Map",
+        "description": "Solution Architecture Map 模块的预留功能开关。"
+      },
+      "CustomizationOverrides": {
+        "title": "自定义覆盖",
+        "description": "自定义热力图的按项覆盖（以项 ID 为键的 JSON）。"
+      },
+      "ProjectInfo": {
+        "title": "项目信息",
+        "description": "在地图上显示的客户名称/徽标和实施合作伙伴信息。"
+      },
+      "Topology": {
+        "title": "解决方案拓扑",
+        "description": "提供给地图的解决方案拓扑：租户、区域、连接、数据中心和指标上限（JSON）。"
+      }
+    }
+  }
+}

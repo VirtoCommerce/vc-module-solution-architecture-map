@@ -1,11 +1,4 @@
 {
-  "solution-architecture-map": {
-    "blades": {
-      "hello-world": {
-        "title": "Hello world blade"
-      }
-    }
-  },
   "permissions": {
     "solution-architecture-map:access": "Open Solution Architecture Map menu",
     "solution-architecture-map:create": "Create Solution Architecture Map related data",
@@ -16,8 +9,20 @@
   "settings": {
     "SolutionArchitectureMap": {
       "Enabled": {
-        "title": "Solution Architecture Map Enabled",
-        "description": "Solution Architecture Map Enabled setting"
+        "title": "Enable Solution Architecture Map",
+        "description": "Reserved feature flag for the Solution Architecture Map module."
+      },
+      "CustomizationOverrides": {
+        "title": "Customization overrides",
+        "description": "Per-item overrides for the customization heat map (JSON keyed by item id)."
+      },
+      "ProjectInfo": {
+        "title": "Project information",
+        "description": "Customer title/logo and implementation partner details shown on the map."
+      },
+      "Topology": {
+        "title": "Solution topology",
+        "description": "The solution topology served to the map: tenants, regions, connections, datacenters and metric ceilings (JSON)."
       }
     }
   }

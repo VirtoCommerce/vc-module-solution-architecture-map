@@ -1,3 +1,0 @@
-namespace VirtoCommerce.SolutionArchitectureMap.Data.PostgreSql;
-
-public class PostgreSqlDataAssemblyMarker;

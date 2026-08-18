@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Открыть меню Solution Architecture Map",
+    "solution-architecture-map:create": "Создание данных Solution Architecture Map",
+    "solution-architecture-map:read": "Просмотр данных Solution Architecture Map",
+    "solution-architecture-map:update": "Изменение данных Solution Architecture Map",
+    "solution-architecture-map:delete": "Удаление данных Solution Architecture Map"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Включить Solution Architecture Map",
+        "description": "Зарезервированный флаг функции для модуля Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Переопределения кастомизации",
+        "description": "Переопределения по элементам для тепловой карты кастомизации (JSON с ключом по id элемента)."
+      },
+      "ProjectInfo": {
+        "title": "Информация о проекте",
+        "description": "Название/логотип клиента и сведения о партнёре по внедрению, отображаемые на карте."
+      },
+      "Topology": {
+        "title": "Топология решения",
+        "description": "Топология решения, передаваемая на карту: арендаторы, регионы, соединения, дата-центры и предельные значения метрик (JSON)."
+      }
+    }
+  }
+}

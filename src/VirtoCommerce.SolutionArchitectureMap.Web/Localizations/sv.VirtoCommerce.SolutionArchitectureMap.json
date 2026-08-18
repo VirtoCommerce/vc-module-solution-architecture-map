@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Öppna menyn Solution Architecture Map",
+    "solution-architecture-map:create": "Skapa Solution Architecture Map-data",
+    "solution-architecture-map:read": "Visa Solution Architecture Map-data",
+    "solution-architecture-map:update": "Uppdatera Solution Architecture Map-data",
+    "solution-architecture-map:delete": "Ta bort Solution Architecture Map-data"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Aktivera Solution Architecture Map",
+        "description": "Reserverad funktionsflagga för modulen Solution Architecture Map."
+      },
+      "CustomizationOverrides": {
+        "title": "Anpassningsöverstyrningar",
+        "description": "Överstyrningar per objekt för anpassnings-värmekartan (JSON med objektets id som nyckel)."
+      },
+      "ProjectInfo": {
+        "title": "Projektinformation",
+        "description": "Kundnamn/-logotyp och information om implementeringspartner som visas på kartan."
+      },
+      "Topology": {
+        "title": "Lösningstopologi",
+        "description": "Lösningstopologin som levereras till kartan: hyresgäster, regioner, anslutningar, datacenter och mätvärdestak (JSON)."
+      }
+    }
+  }
+}

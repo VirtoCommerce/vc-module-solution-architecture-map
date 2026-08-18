@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "solution-architecture-map:access": "Avaa Solution Architecture Map -valikko",
+    "solution-architecture-map:create": "Luo Solution Architecture Map -tietoja",
+    "solution-architecture-map:read": "Näytä Solution Architecture Map -tietoja",
+    "solution-architecture-map:update": "Päivitä Solution Architecture Map -tietoja",
+    "solution-architecture-map:delete": "Poista Solution Architecture Map -tietoja"
+  },
+  "settings": {
+    "SolutionArchitectureMap": {
+      "Enabled": {
+        "title": "Ota Solution Architecture Map käyttöön",
+        "description": "Varattu ominaisuuslippu Solution Architecture Map -moduulille."
+      },
+      "CustomizationOverrides": {
+        "title": "Mukautusten ohitukset",
+        "description": "Kohdekohtaiset ohitukset mukautusten lämpökartalle (JSON, avaimena kohteen tunnus)."
+      },
+      "ProjectInfo": {
+        "title": "Projektin tiedot",
+        "description": "Kartalla näytettävät asiakkaan nimi/logo ja toteutuskumppanin tiedot."
+      },
+      "Topology": {
+        "title": "Ratkaisun topologia",
+        "description": "Kartalle toimitettava ratkaisun topologia: vuokralaiset, alueet, yhteydet, datakeskukset ja mittarien ylärajat (JSON)."
+      }
+    }
+  }
+}
